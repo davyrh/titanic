@@ -57,8 +57,8 @@ passenger = pd.DataFrame(
 y_pred = tree_clf.predict(passenger)
 
 if y_pred[0] == 0:
-    msg = 'This passenger is predicted to be: **died**'
+    msg = 'Penumpang ini diprediksi : **meninggal**'
 else:
-    msg = 'This passenger is predicted to be: **survived**'
+    msg = 'Penumpang ini diprediksi: **bertahan hidup**'
 
 prediction_state.markdown(msg)
